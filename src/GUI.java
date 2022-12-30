@@ -1,12 +1,13 @@
 import net.sf.clipsrules.jni.Environment;
 import javax.swing.*;
 import java.awt.event.*;
-import java.io.IOException;
 import java.util.ArrayList;
 
 public class GUI extends JFrame implements ActionListener{
     public static Environment clips = new Environment();
+
     JLabel l;
+    
     ArrayList<JRadioButton>cb=new ArrayList<>(5);
     JButton b;
     QueryGUI q;
@@ -86,11 +87,12 @@ public class GUI extends JFrame implements ActionListener{
             clips.reset();
             clips.assertString(q.getInput());
             clips.run();
-            try {
-                new OutputGui("out.dat");
-            } catch (IOException ex) {
-                throw new RuntimeException(ex);
-            }
+//                try {
+//                    new OutputGUI("2.dat");
+//                } catch (IOException ex) {
+//                    throw new RuntimeException(ex);
+//                }
+            clips.clear();
         }
     }
     public void actionPerformed(ActionEvent e){
