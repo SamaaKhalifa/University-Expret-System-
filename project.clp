@@ -96,7 +96,7 @@
 (deffunction GetLecturerInDep (?dep)
 	(bind $?c (send (nth$ 1 (find-instance ((?f Department)) (eq ?f:name_ ?dep))) get-lecturer))
 	(open "out.dat" w "a")
-    (printout w ?dep $?c  crlf)
+    (printout w $?c crlf)
     (close w)
 )
 
