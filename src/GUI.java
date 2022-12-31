@@ -8,10 +8,7 @@ import java.util.ArrayList;
 
 public class GUI extends JFrame implements ActionListener{
     public static Environment clips = new Environment();
-
-
     JLabel l;
-    
     ArrayList<JRadioButton>cb=new ArrayList<>(5);
     JButton b;
     QueryGUI q;
