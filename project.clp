@@ -92,7 +92,7 @@
 (multislot courses (type STRING))
 )
 
-;(GetLecturerInDep "dept1")
+;(GetLecturerInDep "CS")
 (deffunction GetLecturerInDep (?dep)
 	(bind $?c (send (nth$ 1 (find-instance ((?f Department)) (eq ?f:name_ ?dep))) get-lecturer))
 	(open "out.dat" w "a")
@@ -127,7 +127,7 @@
 (multislot courses (type STRING))
 )
 
-;(GetCourses "student1")
+;(GetCourses "Noura Ashraf")
 (deffunction GetCourses (?stud)
 	(bind $?course (send (nth$ 1 (find-instance ((?f Student)) (eq ?f:name_ ?stud))) get-courses))
 	;(printout t $?course crlf)
@@ -142,29 +142,36 @@
 	(GetCourses ?studName)
 
   )
-(definstances instances 
+(definstances instances
 
 (univirsity1 of University (name_ "Cairo")(faculty "FCAI" "Engineering" ))
 
-(faculty1 of Faculty (name_ "FCAI") (courses "course1" "course2" "course3" "course4") (department "dept1" "dept2" ))
-(faculty2 of Faculty (name_ "Engineering") (courses "course5" ) (department "dept3"))
+(faculty1 of Faculty (name_ "FCAI") (courses "CS50" "IS50" "AI50" "DS50" "IT50") (department "CS" "IS" "AI" "IT"))
+(faculty2 of Faculty (name_ "Engineering") (courses "IT50" ) (department "AI50" "IT50"))
 
-(department1 of Department (name_ "dept1") (ta "ta1" "ta2" ) (lecturer "lec1" "lec2"))
-(department2 of Department (name_ "dept2") (ta "ta3" ) (lecturer "lec3" ))
-(department3 of Department (name_ "dept3") (ta "ta3" ) (lecturer "lec3" ))
+(department1 of Department (name_ "CS") (ta "Kholod" "Ahmed" ) (lecturer "Abeer" "Ameen"))
+(department2 of Department (name_ "IS") (ta "Ahmed" ) (lecturer "soha" ))
+(department3 of Department (name_ "AI") (ta "Toka" ) (lecturer "Noura" ))
+(department4 of Department (name_ "IT") (ta "Toka" ) (lecturer "Mohammed" ))
 
-(course1 of Course (name_ "course1") )
-(course2 of Course (name_ "course2") )
-(course3 of Course (name_ "course3") )
-(course4 of Course (name_ "course4") )
-(course5 of Course (name_ "course5") )
+(course1 of Course (name_ "CS50") )
+(course2 of Course (name_ "IS50") )
+(course3 of Course (name_ "AI50") )
+(course4 of Course (name_ "DS50") )
+(course5 of Course (name_ "IT50") )
 
-(student1 of Student (name_ "student1") (courses "course1" "course2" "course3"))
-(student2 of Student (name_ "student2") (courses "course1" "course2" "course3" "course4"))
-(ta1 of TA (name_ "ta1") (courses "course1" ))
-(ta2 of TA (name_ "ta2")(courses "course3" ))
-(lecturer1 of Lecturer (name_ "lec1") (courses "course1" ))
-(lecturer2 of Lecturer (name_ "lec2"))
-(lecturer3 of Lecturer (name_ "lec3")(courses "course" ))
+(student1 of Student (name_ "Noura Ashraf") (courses "CS50" "IS50" "AI50"))
+(student2 of Student (name_ "Samaa Khalifa") (courses "CS50" "DS50" "AI50" "IT50"))
+(student3 of Student (name_ "Ahmed Ibrahim") (courses "CS50" "DS50" ))
+(student4 of Student (name_ "Sondos Emara") (courses  "AI50" "IT50"))
+
+(ta1 of TA (name_ "Kholod") (courses "CS50" ))
+(ta2 of TA (name_ "Ahmed")(courses "AI50" ))
+(ta3 of TA (name_ "Rawaa")(courses "DS50" ))
+(ta4 of TA (name_ "Toka")(courses "IT50" ))
+
+(lecturer1 of Lecturer (name_ "Abeer") (courses "CS50"  "AI50"))
+(lecturer2 of Lecturer (name_ "soha") (courses "CS50" "DS50" ))
+(lecturer3 of Lecturer (name_ "Ameen")(courses "AI50" "IS50" ))
 
 )

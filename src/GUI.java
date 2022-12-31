@@ -1,6 +1,9 @@
+import net.sf.clipsrules.jni.CLIPSException;
+import net.sf.clipsrules.jni.CLIPSLoadException;
 import net.sf.clipsrules.jni.Environment;
 import javax.swing.*;
 import java.awt.event.*;
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class GUI extends JFrame implements ActionListener{
@@ -80,36 +83,39 @@ public class GUI extends JFrame implements ActionListener{
         setVisible(true);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
-    public void clipsRun(){
+    public void clipsRun() throws CLIPSException {
         if ( q.getInput() != null) {
             clips.clear();
             clips.load("project.clp");
             clips.reset();
             clips.assertString(q.getInput());
             clips.run();
-//                try {
-//                    new OutputGUI("2.dat");
-//                } catch (IOException ex) {
-//                    throw new RuntimeException(ex);
-//                }
+                try {
+                    new OutputGui("out.dat");
+                } catch (IOException ex) {
+                    throw new RuntimeException(ex);
+                }
             clips.clear();
         }
+        q.clearFile("out.dat");
     }
     public void actionPerformed(ActionEvent e){
+        try {
+            clipsRun();
 
-        if(cb.get(0).isSelected()) {
-            clipsRun();
-        }else if (cb.get(1).isSelected()){
-            clipsRun();
-        }
-        else if (cb.get(2).isSelected()){
-            clipsRun();
-        }
-        else if (cb.get(3).isSelected()){
-            clipsRun();
-        }
-        else if (cb.get(4).isSelected()){
-            clipsRun();
+            if (cb.get(0).isSelected()) {
+
+            } else if (cb.get(1).isSelected()) {
+                clipsRun();
+            } else if (cb.get(2).isSelected()) {
+                clipsRun();
+            } else if (cb.get(3).isSelected()) {
+                clipsRun();
+            } else if (cb.get(4).isSelected()) {
+                clipsRun();
+            }
+        } catch(CLIPSException ex){
+            ex.printStackTrace();
         }
 
     }
