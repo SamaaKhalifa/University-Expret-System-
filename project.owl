@@ -1,0 +1,1538 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#"
+     xml:base="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-13="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#CourseInFaculty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#CourseInFaculty">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#FacultyCources"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Department_has_Student -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Department_has_Student">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#FacultyCources -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#FacultyCources">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Faculty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#It_is_taught_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#It_is_taught_in">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Faculty_Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#hasDepartment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#hasDepartment">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#inside"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Faculty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Department"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#hasExam -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#hasExam">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Exams"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#hasFaculty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#hasFaculty">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#isInside"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#University"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Faculty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#hasLecturer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#hasLecturer">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#inDepartment"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Department"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lecturer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#hasStudent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#hasStudent">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#study"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Student"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#hasTA -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#hasTA">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#inDept"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Department"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#TA"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#hasWork -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#hasWork">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course_work"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#has_Places -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#has_Places">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Faculty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Faculty_Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#has_Thesis -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#has_Thesis">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Academic_Staff"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Thesis"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#inDepartment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#inDepartment">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Academic_Staff"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Department"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#inDept -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#inDept">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#TA"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Department"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#inside -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#inside"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#isInside -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#isInside">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Faculty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#University"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#isTaughtBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#isTaughtBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#teach"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Academic_Staff"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#study -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#study">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#teach -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#teach">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Academic_Staff"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#CourceName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#CourceName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#DepartmentName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#DepartmentName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Department"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#DepartmentName"/>
+                        <owl:hasValue>AI</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#DepartmentName"/>
+                        <owl:hasValue>CS</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#DepartmentName"/>
+                        <owl:hasValue>DS</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#DepartmentName"/>
+                        <owl:hasValue>IS</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#DepartmentName"/>
+                        <owl:hasValue>IT</owl:hasValue>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#ExamName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#ExamName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Exams"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#FacultyName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#FacultyName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Faculty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#GPA -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#GPA">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Student"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#GPA"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#LecturerName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#LecturerName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lecturer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Level -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Level">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Student"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Level"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Level"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Level"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Level"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</owl:hasValue>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#PlaceName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#PlaceName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Faculty_Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#ProgramName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#ProgramName">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#StudId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#StudId">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#StudName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#StudName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#TAName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#TAName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#TA"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#ThesisName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#ThesisName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Thesis"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#UniversityName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#UniversityName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#University"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#WorkName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#WorkName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course_work"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Academic_Staff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Academic_Staff">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#hasWork"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course_work"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Faculty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course_work -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course_work">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Department -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Department">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#DepartmentName"/>
+                        <owl:hasValue>AI</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#DepartmentName"/>
+                        <owl:hasValue>CS</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#DepartmentName"/>
+                        <owl:hasValue>DS</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#DepartmentName"/>
+                        <owl:hasValue>IS</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#DepartmentName"/>
+                        <owl:hasValue>IT</owl:hasValue>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Faculty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Exams -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Exams">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Faculty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Faculty">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#FacultyCources"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#University"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Faculty_Place -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Faculty_Place">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Faculty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lab_room -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lab_room">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Faculty_Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lecture_hall -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lecture_hall">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Faculty_Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lecturer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lecturer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Academic_Staff"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Library -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Library">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Faculty_Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Person">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Faculty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Student">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#TA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#TA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Academic_Staff"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Thesis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Thesis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Faculty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#University -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#University">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#hasFaculty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Faculty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Assignments -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Assignments">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course_work"/>
+        <WorkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Assignment1</WorkName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course"/>
+        <It_is_taught_in rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Hall1"/>
+        <It_is_taught_in rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lab1"/>
+        <hasExam rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Exam1"/>
+        <hasExam rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Exam2"/>
+        <hasWork rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Assignments"/>
+        <hasWork rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Project"/>
+        <CourceName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CS201</CourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course"/>
+        <It_is_taught_in rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Hall2"/>
+        <It_is_taught_in rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lab1"/>
+        <hasExam rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Exam1"/>
+        <hasExam rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Exam2"/>
+        <hasWork rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Assignments"/>
+        <hasWork rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Project"/>
+        <CourceName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CS202</CourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course"/>
+        <It_is_taught_in rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Hall3"/>
+        <It_is_taught_in rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lab1"/>
+        <hasExam rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Exam1"/>
+        <hasExam rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Exam2"/>
+        <hasWork rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Assignments"/>
+        <hasWork rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Project"/>
+        <CourceName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CS203</CourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course"/>
+        <It_is_taught_in rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Hall2"/>
+        <It_is_taught_in rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lab3"/>
+        <hasExam rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Exam1"/>
+        <hasExam rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Exam2"/>
+        <hasWork rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Assignments"/>
+        <hasWork rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Project"/>
+        <CourceName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CS204</CourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course"/>
+        <It_is_taught_in rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Hall1"/>
+        <It_is_taught_in rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lab3"/>
+        <hasExam rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Exam1"/>
+        <hasExam rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Exam2"/>
+        <hasWork rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Assignments"/>
+        <hasWork rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Project"/>
+        <CourceName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS301</CourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course"/>
+        <It_is_taught_in rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Hall1"/>
+        <It_is_taught_in rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lab3"/>
+        <hasExam rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Exam1"/>
+        <hasExam rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Exam2"/>
+        <hasWork rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Assignments"/>
+        <hasWork rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Project"/>
+        <CourceName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS302</CourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course"/>
+        <It_is_taught_in rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Hall3"/>
+        <It_is_taught_in rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lab2"/>
+        <hasExam rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Exam1"/>
+        <hasExam rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Exam2"/>
+        <hasWork rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Assignments"/>
+        <hasWork rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Project"/>
+        <CourceName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS303</CourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course"/>
+        <It_is_taught_in rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Hall2"/>
+        <It_is_taught_in rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lab2"/>
+        <hasExam rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Exam1"/>
+        <hasExam rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Exam2"/>
+        <hasWork rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Assignments"/>
+        <hasWork rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Project"/>
+        <CourceName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IT101</CourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course"/>
+        <It_is_taught_in rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Hall3"/>
+        <It_is_taught_in rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lab2"/>
+        <It_is_taught_in rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lab3"/>
+        <hasExam rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Exam1"/>
+        <hasExam rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Exam2"/>
+        <hasWork rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Assignments"/>
+        <hasWork rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Project"/>
+        <CourceName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IT102</CourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course91 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course91">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course"/>
+        <It_is_taught_in rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Hall2"/>
+        <It_is_taught_in rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lab2"/>
+        <hasExam rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Exam1"/>
+        <hasExam rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Exam2"/>
+        <hasWork rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Assignments"/>
+        <hasWork rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Project"/>
+        <CourceName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IT103</CourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course92 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course92">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course"/>
+        <It_is_taught_in rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Hall1"/>
+        <It_is_taught_in rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lab2"/>
+        <hasExam rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Exam1"/>
+        <hasExam rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Exam2"/>
+        <hasWork rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Assignments"/>
+        <hasWork rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Project"/>
+        <CourceName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IT105</CourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course93 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course93">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course"/>
+        <It_is_taught_in rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Hall1"/>
+        <It_is_taught_in rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lab2"/>
+        <hasExam rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Exam1"/>
+        <hasExam rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Exam2"/>
+        <hasWork rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Assignments"/>
+        <hasWork rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Project"/>
+        <CourceName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS304</CourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course94 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course94">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course"/>
+        <It_is_taught_in rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Hall1"/>
+        <hasExam rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Exam1"/>
+        <hasExam rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Exam2"/>
+        <hasWork rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Assignments"/>
+        <hasWork rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Project"/>
+        <CourceName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS309</CourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course95 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course95">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course"/>
+        <It_is_taught_in rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Hall3"/>
+        <hasExam rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Exam1"/>
+        <hasExam rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Exam2"/>
+        <hasWork rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Assignments"/>
+        <hasWork rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Project"/>
+        <CourceName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Construction management</CourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course96 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course96">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course"/>
+        <It_is_taught_in rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Hall2"/>
+        <hasExam rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Exam1"/>
+        <hasExam rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Exam2"/>
+        <hasWork rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Assignments"/>
+        <hasWork rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Project"/>
+        <CourceName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Engineering Systems</CourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course97 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course97">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course"/>
+        <It_is_taught_in rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Hall3"/>
+        <hasExam rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Exam1"/>
+        <hasExam rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Exam2"/>
+        <CourceName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linguistics</CourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course98 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course98">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course"/>
+        <It_is_taught_in rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Hall3"/>
+        <hasExam rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Exam1"/>
+        <hasExam rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Exam2"/>
+        <CourceName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discourse analysis</CourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Dep1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Dep1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Department"/>
+        <hasLecturer rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lecturer1"/>
+        <hasLecturer rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lecturer2"/>
+        <hasLecturer rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lecturer4"/>
+        <hasTA rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#ta1"/>
+        <hasTA rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#ta2"/>
+        <hasTA rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#ta4"/>
+        <DepartmentName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CS</DepartmentName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Dep2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Dep2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Department"/>
+        <hasLecturer rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lecturer5"/>
+        <hasTA rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#ta3"/>
+        <DepartmentName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS</DepartmentName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Dep3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Dep3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Department"/>
+        <hasLecturer rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lecturer8"/>
+        <hasLecturer rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lecturer9"/>
+        <DepartmentName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AI</DepartmentName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Dept4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Dept4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Department"/>
+        <hasLecturer rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lecturer3"/>
+        <hasTA rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#ta5"/>
+        <hasTA rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#ta8"/>
+        <DepartmentName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IT</DepartmentName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Dept5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Dept5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Department"/>
+        <hasLecturer rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lecturer6"/>
+        <hasLecturer rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lecturer7"/>
+        <hasTA rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#ta6"/>
+        <hasTA rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#ta7"/>
+        <DepartmentName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS</DepartmentName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Dept6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Dept6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Department"/>
+        <hasLecturer rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lecturer91"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Exam1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Exam1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Exams"/>
+        <ExamName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Midterm</ExamName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Exam2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Exam2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Exams"/>
+        <ExamName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Final</ExamName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Faculty1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Faculty1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Faculty"/>
+        <FacultyCources rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course1"/>
+        <FacultyCources rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course2"/>
+        <FacultyCources rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course3"/>
+        <FacultyCources rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course4"/>
+        <FacultyCources rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course5"/>
+        <FacultyCources rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course6"/>
+        <FacultyCources rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course7"/>
+        <FacultyCources rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course8"/>
+        <FacultyCources rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course91"/>
+        <FacultyCources rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course92"/>
+        <FacultyCources rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course93"/>
+        <FacultyCources rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course94"/>
+        <hasDepartment rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Dep1"/>
+        <hasDepartment rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Dep2"/>
+        <hasDepartment rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Dept4"/>
+        <hasDepartment rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Dept5"/>
+        <has_Places rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Hall1"/>
+        <has_Places rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Hall2"/>
+        <has_Places rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Hall3"/>
+        <has_Places rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lab1"/>
+        <has_Places rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lab2"/>
+        <has_Places rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lab3"/>
+        <FacultyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FCAI</FacultyName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Faculty2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Faculty2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Faculty"/>
+        <FacultyCources rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course95"/>
+        <FacultyCources rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course96"/>
+        <hasDepartment rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Dep3"/>
+        <hasDepartment rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Dept6"/>
+        <FacultyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Engineering</FacultyName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Faculty3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Faculty3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Faculty"/>
+        <FacultyCources rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course1"/>
+        <FacultyCources rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course2"/>
+        <FacultyCources rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course3"/>
+        <FacultyCources rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course4"/>
+        <FacultyCources rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course5"/>
+        <FacultyCources rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course6"/>
+        <FacultyCources rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course7"/>
+        <FacultyCources rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course9"/>
+        <FacultyCources rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course92"/>
+        <FacultyCources rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course94"/>
+        <hasDepartment rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Dep1"/>
+        <hasDepartment rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Dep2"/>
+        <hasDepartment rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Dept4"/>
+        <FacultyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FCI</FacultyName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Faculty4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Faculty4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Faculty"/>
+        <FacultyCources rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course97"/>
+        <FacultyCources rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course98"/>
+        <FacultyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arts</FacultyName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Faculty5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Faculty5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Faculty"/>
+        <FacultyCources rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course95"/>
+        <FacultyCources rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course96"/>
+        <hasDepartment rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Dep3"/>
+        <hasDepartment rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Dept6"/>
+        <FacultyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Engineering</FacultyName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Hall1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Hall1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lecture_hall"/>
+        <PlaceName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ibrahim Farag</PlaceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Hall2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Hall2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lecture_hall"/>
+        <PlaceName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Modarag 7</PlaceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Hall3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Hall3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lecture_hall"/>
+        <PlaceName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">El Shafei</PlaceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lab1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lab1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lab_room"/>
+        <PlaceName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lab1</PlaceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lab2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lab2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lab_room"/>
+        <PlaceName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lab2</PlaceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lab3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lab3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lab_room"/>
+        <PlaceName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lab3</PlaceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lecturer1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lecturer1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lecturer"/>
+        <has_Thesis rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Thesis1"/>
+        <teach rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course1"/>
+        <teach rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course2"/>
+        <LecturerName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Abeer Korany</LecturerName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lecturer2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lecturer2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lecturer"/>
+        <has_Thesis rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Thesis2"/>
+        <teach rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course3"/>
+        <LecturerName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amin Allam</LecturerName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lecturer3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lecturer3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lecturer"/>
+        <teach rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course8"/>
+        <teach rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course91"/>
+        <teach rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course92"/>
+        <LecturerName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mona Soliman</LecturerName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lecturer4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lecturer4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lecturer"/>
+        <teach rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course4"/>
+        <LecturerName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mohamed Elramly</LecturerName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lecturer5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lecturer5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lecturer"/>
+        <teach rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course93"/>
+        <teach rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course94"/>
+        <LecturerName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doaa Saleh</LecturerName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lecturer6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lecturer6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lecturer"/>
+        <teach rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course5"/>
+        <teach rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course7"/>
+        <LecturerName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ali Zidan</LecturerName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lecturer7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lecturer7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lecturer"/>
+        <teach rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course6"/>
+        <LecturerName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neamat Abdelhady</LecturerName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lecturer8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lecturer8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lecturer"/>
+        <teach rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course95"/>
+        <LecturerName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ahmed Ali</LecturerName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lecturer9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lecturer9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lecturer"/>
+        <teach rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course96"/>
+        <LecturerName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fahmy Gomaa</LecturerName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lecturer91 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lecturer91">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lecturer"/>
+        <teach rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course97"/>
+        <teach rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course98"/>
+        <LecturerName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gameel Ahmed</LecturerName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Library1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Library1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Library"/>
+        <PlaceName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Library1</PlaceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Library2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Library2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Library"/>
+        <PlaceName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Library2</PlaceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Project -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Project">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course_work"/>
+        <WorkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Project</WorkName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Stud1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Stud1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Student"/>
+        <hasDepartment rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Dep1"/>
+        <study rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course1"/>
+        <study rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course2"/>
+        <study rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course4"/>
+        <GPA rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.4</GPA>
+        <Level rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</Level>
+        <StudId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20190592</StudId>
+        <StudName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Noura Ashraf AbdElnaby Mansour</StudName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Stud2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Stud2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Student"/>
+        <hasDepartment rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Dep1"/>
+        <study rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course1"/>
+        <study rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course3"/>
+        <study rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course4"/>
+        <GPA rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.1</GPA>
+        <Level rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</Level>
+        <StudId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20190062</StudId>
+        <StudName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ahmed Ibrahim</StudName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Stud3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Stud3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Student"/>
+        <hasDepartment rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Dep1"/>
+        <study rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course2"/>
+        <study rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course3"/>
+        <study rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course4"/>
+        <GPA rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.4</GPA>
+        <Level rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</Level>
+        <StudId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20190247</StudId>
+        <StudName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Samaa Khalifa Elsayed</StudName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Stud4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Stud4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Student"/>
+        <study rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course5"/>
+        <study rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course7"/>
+        <GPA rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.1</GPA>
+        <Level rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</Level>
+        <StudId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20190080</StudId>
+        <StudName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mohamed Ali</StudName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Stud5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Stud5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Student"/>
+        <study rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course6"/>
+        <GPA rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.3</GPA>
+        <Level rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</Level>
+        <StudId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20210062</StudId>
+        <StudName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ahmed Fahmy</StudName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Stud6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Stud6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Student"/>
+        <study rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course95"/>
+        <study rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course96"/>
+        <GPA rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.8</GPA>
+        <Level rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</Level>
+        <StudId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20190167</StudId>
+        <StudName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mohamed Nasser</StudName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Stud7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Stud7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Student"/>
+        <study rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course95"/>
+        <GPA rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.7</GPA>
+        <Level rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</Level>
+        <StudId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20190063</StudId>
+        <StudName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eslam Ashraf</StudName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Stud8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Stud8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Student"/>
+        <study rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course95"/>
+        <GPA rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.2</GPA>
+        <Level rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</Level>
+        <StudId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20180072</StudId>
+        <StudName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mohamed Hossam</StudName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Thesis1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Thesis1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Thesis"/>
+        <ThesisName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Government work developing</ThesisName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Thesis2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Thesis2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Thesis"/>
+        <ThesisName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Improve Time Complexity</ThesisName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Thesis3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Thesis3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Thesis"/>
+        <ThesisName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Improve Memory Complexity</ThesisName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Thesis4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Thesis4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Thesis"/>
+        <ThesisName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Make Mobile Androied</ThesisName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#University1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#University1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#University"/>
+        <hasFaculty rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Faculty1"/>
+        <hasFaculty rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Faculty2"/>
+        <UniversityName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cairo</UniversityName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#University2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#University2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#University"/>
+        <hasFaculty rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Faculty3"/>
+        <hasFaculty rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Faculty4"/>
+        <hasFaculty rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Faculty5"/>
+        <UniversityName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ain Shams</UniversityName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#ta1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#ta1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#TA"/>
+        <has_Thesis rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Thesis3"/>
+        <teach rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course1"/>
+        <TAName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Khloud Khaled</TAName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#ta2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#ta2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#TA"/>
+        <has_Thesis rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Thesis4"/>
+        <teach rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course2"/>
+        <TAName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ahmed Hassan</TAName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#ta3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#ta3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#TA"/>
+        <teach rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course93"/>
+        <teach rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course94"/>
+        <TAName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nesma Mahmoud</TAName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#ta4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#ta4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#TA"/>
+        <teach rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course1"/>
+        <teach rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course3"/>
+        <TAName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sara Elnady</TAName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#ta5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#ta5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#TA"/>
+        <teach rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course91"/>
+        <TAName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mohammed Tawfik</TAName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#ta6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#ta6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#TA"/>
+        <teach rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course5"/>
+        <teach rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course6"/>
+        <TAName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mona Khamis</TAName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#ta7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#ta7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#TA"/>
+        <teach rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course7"/>
+        <TAName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hoda Tawakl</TAName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#ta8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#ta8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#TA"/>
+        <teach rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course8"/>
+        <teach rdf:resource="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Course92"/>
+        <TAName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ahmed Ashry</TAName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lab_room"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Lecture_hall"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#Library"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

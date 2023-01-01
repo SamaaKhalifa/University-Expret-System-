@@ -1,0 +1,55 @@
+PREFIX uri: <http://www.semanticweb.org/ahmedibrahim/ontologies/2022/11/untitled-ontology-13#>
+
+1. Get all TAs belonging to a department.
+
+SELECT ?st ?ta
+	WHERE { 
+		?st  uri:DepartmentName "CS" ^^xsd:string.
+		?st  uri:hasTA ?tmp .
+		?tmp uri:TAName ?ta .
+	}
+
+
+
+2. Get the courses a student is currently studying.
+
+SELECT ?st ?cou
+	WHERE { 
+		?st  uri:StudName "Ahmed Ibrahim" ^^xsd:string.
+		?st  uri:study ?tmp .
+		?tmp uri:CourceName ?cou .
+	}
+
+
+
+3. Get all the courses offered by a certain faculty.
+
+ SELECT ?fac ?cou
+	WHERE { 
+		?fac  uri:FacultyName  "FCAI" ^^xsd:string.
+		?fac  uri:FacultyCources ?tmp .
+		?tmp uri:CourceName ?cou .
+	}
+
+
+
+4. Get Lecturers of a faculty.
+
+SELECT ?fac ?dept ?lname
+	WHERE { 
+		?fac  uri:FacultyName  "FCAI" ^^xsd:string.
+		?fac  uri:hasDepartment ?tmp .
+		?tmp uri:DepartmentName ?dept.
+		?tmp uri:hasLecturer ?tmp2.
+		?tmp2 uri:LecturerName ?lname .
+	}
+
+
+5. Get all faculties of a university.
+
+SELECT ?uni ?fname
+	WHERE { 
+		?uni  uri:UniversityName  "Cairo" ^^xsd:string.
+		?uni  uri:hasFaculty ?tmp .
+		?tmp uri:FacultyName ?fname .
+	}
