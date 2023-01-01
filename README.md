@@ -106,3 +106,11 @@
    **Graphical user Interface**<br>
    - Choose the query to run from the following: <br>
    ![This is an image](https://github.com/SamaaKhalifa/University-Expret-System-/blob/main/Screenshots/c1.png?raw=true)
+   - Get all TAs belonging to a department. <br>
+   ![This is an image](https://github.com/SamaaKhalifa/University-Expret-System-/blob/main/Screenshots/c2.png?raw=true)
+   **Result :) ^^** <br>
+   ![This is an image](https://github.com/SamaaKhalifa/University-Expret-System-/blob/main/Screenshots/c3.png?raw=true)
+   - Get the courses a student is currently studying.  <br>
+   ![This is an image](https://github.com/SamaaKhalifa/University-Expret-System-/blob/main/Screenshots/c4.png?raw=true)
+   **Result :) ^^** <br>
+   ![This is an image](https://github.com/SamaaKhalifa/University-Expret-System-/blob/main/Screenshots/c5.png?raw=true)
