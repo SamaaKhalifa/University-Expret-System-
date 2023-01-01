@@ -104,5 +104,5 @@
     ⦁	Create functions to be able to infer on data.
     ⦁	Use clips rule based system to extract new knowledge.
    **Graphical user Interface**<br>
-   - Choose the query to run from the following: 
+   - Choose the query to run from the following: <br>
    ![This is an image](https://github.com/SamaaKhalifa/University-Expret-System-/blob/main/Screenshots/c1.png?raw=true)
