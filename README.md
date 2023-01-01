@@ -74,11 +74,11 @@
  
      ⦁ Data properties: LecturerName.
    ![This is an image](https://github.com/SamaaKhalifa/University-Expret-System-/blob/main/Screenshots/9.png?raw=true)
-   <br> **9 - Class (Lab_room)**
+   <br> **9 - Class (Lab_room)**<br>
    ![This is an image](https://github.com/SamaaKhalifa/University-Expret-System-/blob/main/Screenshots/10.png?raw=true)
-   <br> **10 - Class (Lecture_hall)**
+   <br> **10 - Class (Lecture_hall)**<br>
    ![This is an image](https://github.com/SamaaKhalifa/University-Expret-System-/blob/main/Screenshots/11.png?raw=true)
-   <br> **11 - Class (Library)**
+   <br> **11 - Class (Library)**<br>
    ![This is an image](https://github.com/SamaaKhalifa/University-Expret-System-/blob/main/Screenshots/12.png?raw=true)
    <br> **12 - Class (Student)**
    
