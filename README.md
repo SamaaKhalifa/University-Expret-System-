@@ -42,12 +42,35 @@
      ⦁ Object properties: hasFaculty.
    ![This is an image](https://github.com/SamaaKhalifa/University-Expret-System-/blob/main/Screenshots/1.png?raw=true)
    
-   **1 - Class (Faculty)**
+   **2 - Class (Faculty)**
  
      ⦁ Data properties: FacultyName.
      ⦁ Object properties: hasPlaces ,hasDepartment and isInside.
    ![This is an image](https://github.com/SamaaKhalifa/University-Expret-System-/blob/main/Screenshots/2.png?raw=true)
-
+   **3 - Class (Course)**
+ 
+     ⦁ Data properties: CourseName.
+     ⦁ Object properties: hasExam , hasStudent, hasWork,isToughtBy and is_taught_in .
+   ![This is an image](https://github.com/SamaaKhalifa/University-Expret-System-/blob/main/Screenshots/3.png?raw=true)
+   ![This is an image](https://github.com/SamaaKhalifa/University-Expret-System-/blob/main/Screenshots/4.png?raw=true)
+   **4 - Class (Course Work)**
+ 
+     ⦁ Data properties: workName.
+   ![This is an image](https://github.com/SamaaKhalifa/University-Expret-System-/blob/main/Screenshots/5.png?raw=true)
+   **5 - Class (Department)**
+ 
+     ⦁ Data properties: DepartmentName.
+     ⦁ Object properties: hasLecturer and hasTA.
+   ![This is an image](https://github.com/SamaaKhalifa/University-Expret-System-/blob/main/Screenshots/6.png?raw=true)
+   **6 - Class (Faculty_Place)**
+ 
+     ⦁ Data properties: PlaceName.
+   ![This is an image](https://github.com/SamaaKhalifa/University-Expret-System-/blob/main/Screenshots/7.png?raw=true)
+   **7 - Class (Academic_Staff)**
+ 
+     ⦁ Object properties: hasThesis ,inDepartment  and teach.
+   ![This is an image](https://github.com/SamaaKhalifa/University-Expret-System-/blob/main/Screenshots/8.png?raw=true)
+   
 
 
 
