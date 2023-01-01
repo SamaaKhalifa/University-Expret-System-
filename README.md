@@ -108,9 +108,24 @@
    ![This is an image](https://github.com/SamaaKhalifa/University-Expret-System-/blob/main/Screenshots/c1.png?raw=true)
    - Get all TAs belonging to a department. <br>
    ![This is an image](https://github.com/SamaaKhalifa/University-Expret-System-/blob/main/Screenshots/c2.png?raw=true)
-   **Result :) ^^** <br>
+   <br>**Result :) ^^** <br>
    ![This is an image](https://github.com/SamaaKhalifa/University-Expret-System-/blob/main/Screenshots/c3.png?raw=true)
    - Get the courses a student is currently studying.  <br>
    ![This is an image](https://github.com/SamaaKhalifa/University-Expret-System-/blob/main/Screenshots/c4.png?raw=true)
-   **Result :) ^^** <br>
+   <br>**Result :) ^^** <br>
    ![This is an image](https://github.com/SamaaKhalifa/University-Expret-System-/blob/main/Screenshots/c5.png?raw=true)
+   
+   - Get all the courses offered by a certain faculty.   <br>
+   ![This is an image](https://github.com/SamaaKhalifa/University-Expret-System-/blob/main/Screenshots/c6.png?raw=true)
+   <br>**Result :) ^^** <br>
+   ![This is an image](https://github.com/SamaaKhalifa/University-Expret-System-/blob/main/Screenshots/c7.png?raw=true)
+   
+   - Get Lecturers of a faculty.  <br>
+   ![This is an image](https://github.com/SamaaKhalifa/University-Expret-System-/blob/main/Screenshots/c8.png?raw=true)
+   <br>**Result :) ^^** <br>
+   ![This is an image](https://github.com/SamaaKhalifa/University-Expret-System-/blob/main/Screenshots/c9.png?raw=true)
+   
+   - Get all faculties of a university.  <br>
+   ![This is an image](https://github.com/SamaaKhalifa/University-Expret-System-/blob/main/Screenshots/c10.png?raw=true)
+   <br>**Result :) ^^** <br>
+   ![This is an image](https://github.com/SamaaKhalifa/University-Expret-System-/blob/main/Screenshots/c11.png?raw=true)
