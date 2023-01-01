@@ -70,8 +70,39 @@
  
      ⦁ Object properties: hasThesis ,inDepartment  and teach.
    ![This is an image](https://github.com/SamaaKhalifa/University-Expret-System-/blob/main/Screenshots/8.png?raw=true)
+   <br> **8 - Class (Lecturer)**
+ 
+     ⦁ Data properties: LecturerName.
+   ![This is an image](https://github.com/SamaaKhalifa/University-Expret-System-/blob/main/Screenshots/9.png?raw=true)
+   <br> **9 - Class (Lab_room)**
+   ![This is an image](https://github.com/SamaaKhalifa/University-Expret-System-/blob/main/Screenshots/10.png?raw=true)
+   <br> **10 - Class (Lecture_hall)**
+   ![This is an image](https://github.com/SamaaKhalifa/University-Expret-System-/blob/main/Screenshots/11.png?raw=true)
+   <br> **11 - Class (Library)**
+   ![This is an image](https://github.com/SamaaKhalifa/University-Expret-System-/blob/main/Screenshots/12.png?raw=true)
+   <br> **12 - Class (Student)**
    
+       ⦁ Data properties: GPA, level, studId and StudName.
+       ⦁ Object properties: hasDepartment and study.
+   ![This is an image](https://github.com/SamaaKhalifa/University-Expret-System-/blob/main/Screenshots/13.png?raw=true)
+   <br> **13 - Class (TA)**
+   
+       ⦁ Data properties: TAName.
+       ⦁ Object properties: inDept .
+   ![This is an image](https://github.com/SamaaKhalifa/University-Expret-System-/blob/main/Screenshots/14.png?raw=true)
+   <br> **14 - Class (Thesis)**
+   
+       ⦁ Data properties: TAName.
+   ![This is an image](https://github.com/SamaaKhalifa/University-Expret-System-/blob/main/Screenshots/15.png?raw=true)
 
 
+# Part2 (clips):
 
-
+    ⦁	Define the different classes and subclasses in the system using clips.
+    ⦁	Define the relations between classes using rules. 
+    ⦁	Define the individuals (instance) of each class.
+    ⦁	Create functions to be able to infer on data.
+    ⦁	Use clips rule based system to extract new knowledge.
+   **Graphical user Interface**<br>
+   - Choose the query to run from the following: 
+   ![This is an image](https://github.com/SamaaKhalifa/University-Expret-System-/blob/main/Screenshots/c1.png?raw=true)
