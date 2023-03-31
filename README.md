@@ -3,7 +3,7 @@
   - **Samaa Khalifa Elsayed** =>  samaakhalifa93@gmail.com      github => https://github.com/SamaaKhalifa <br> 
   - **Noura Ashraf AbdElnaby** => nourraasshhraf@gmail.com      github =>  https://github.com/NouraAshraff<br> 
   - **Sondos Emara Gomaa Basha** => sondos.emara2002@gmail.com  github =>  https://github.com/SondosEmara<br> 
-# University-Expret-System-
+# University-Expert-System
     ● This project introduce an expert university system 
     and the different relations between its parts represented as facts
     and rules in clips and hierarchy ontology in protégé.
