@@ -10,7 +10,7 @@
     It also discusses how to infer on it using rule based system “clips” 
     and SparQl query language.
 
-# University-Expret-System has the Following Classes:
+# University-Expert-System has the Following Classes:
 - University
 - Faculty
 - Department
